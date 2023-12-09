@@ -1,5 +1,6 @@
 """Module to use math operations"""
 import math
+import pydoc
 
 class Fraction:
     """Class representing a fraction and operations on it
@@ -206,3 +207,6 @@ class Fraction:
         """
         diff = abs(self.numerator * other.denominator - other.numerator * self.denominator)
         return diff == 1
+    
+if __name__=='__main__':
+    pydoc.writedoc(Fraction)
