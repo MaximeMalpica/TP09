@@ -205,7 +205,7 @@ class Fraction:
         PRE : Une fraction.
         POST : Renvoie True si deux fractions sont adjacentes sinon False.
         """
-        diff = abs(self.numerator * other.denominator - other.numerator * self.denominator)
+        diff = abs(self.__num * other.__den - other.__num * self.__den)
         return diff == 1
     
 if __name__=='__main__':
