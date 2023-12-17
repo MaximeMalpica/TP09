@@ -97,7 +97,7 @@ class TestUnitaire(unittest.TestCase):
 
     def test_adjacent(self):
         """Test if the difference between two Fraction is a unit"""
-        #self.assertFalse(Fraction(4, 3).is_adjacent_to(2))
+        self.assertFalse(Fraction(4, 3).is_adjacent_to(2))
 
 if __name__ == '__main__':
     cov = coverage.Coverage()
