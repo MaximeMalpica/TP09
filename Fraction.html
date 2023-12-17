@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: class Fraction</title>
+</head><body>
+<p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Fraction">class <strong>Fraction</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Fraction(num=0,&nbsp;den=1)<br>
+&nbsp;<br>
+Class&nbsp;representing&nbsp;a&nbsp;fraction&nbsp;and&nbsp;operations&nbsp;on&nbsp;it<br>
+&nbsp;<br>
+Author&nbsp;:&nbsp;M.&nbsp;Malpica&nbsp;Arana<br>
+Date&nbsp;:&nbsp;12/12/2023<br>
+This&nbsp;class&nbsp;allows&nbsp;fraction&nbsp;manipulations&nbsp;through&nbsp;several&nbsp;operations.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Fraction-__add__"><strong>__add__</strong></a>(self, other)</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;+&nbsp;operator&nbsp;for&nbsp;fractions.<br>
+&nbsp;<br>
+PRE&nbsp;:&nbsp;'other'&nbsp;est&nbsp;une&nbsp;instance&nbsp;de&nbsp;Fraction<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;une&nbsp;nouvelle&nbsp;fraction&nbsp;représentant&nbsp;la&nbsp;somme&nbsp;des&nbsp;deux&nbsp;fractions</span></dd></dl>
+
+<dl><dt><a name="Fraction-__eq__"><strong>__eq__</strong></a>(self, other: int) -&gt; bool</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;==&nbsp;operator&nbsp;for&nbsp;fractions.<br>
+&nbsp;<br>
+PRE:&nbsp;'other'&nbsp;est&nbsp;une&nbsp;instance&nbsp;de&nbsp;Fraction<br>
+POST:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;les&nbsp;deux&nbsp;fractions&nbsp;sont&nbsp;équivalentes&nbsp;,&nbsp;False&nbsp;sinon</span></dd></dl>
+
+<dl><dt><a name="Fraction-__float__"><strong>__float__</strong></a>(self) -&gt; float</dt><dd><span class="code">Returns&nbsp;the&nbsp;decimal&nbsp;value&nbsp;of&nbsp;the&nbsp;fraction.<br>
+&nbsp;<br>
+POST:&nbsp;Renvoie&nbsp;la&nbsp;valeur&nbsp;décimale&nbsp;de&nbsp;la&nbsp;fraction</span></dd></dl>
+
+<dl><dt><a name="Fraction-__init__"><strong>__init__</strong></a>(self, num=0, den=1)</dt><dd><span class="code">Initialize&nbsp;a&nbsp;Fraction&nbsp;object&nbsp;with&nbsp;a&nbsp;numerator&nbsp;and&nbsp;denominator.<br>
+&nbsp;<br>
+PRE&nbsp;:<br>
+-&nbsp;num&nbsp;:&nbsp;un&nbsp;int&nbsp;qui&nbsp;représente&nbsp;le&nbsp;numérateur&nbsp;d'une&nbsp;fraction<br>
+-&nbsp;den&nbsp;:&nbsp;un&nbsp;int&nbsp;qui&nbsp;représente&nbsp;le&nbsp;dénominateur&nbsp;d'une&nbsp;fraction<br>
+POST&nbsp;:&nbsp;Initialise&nbsp;un&nbsp;objet&nbsp;Fraction&nbsp;avec&nbsp;le&nbsp;numérateur&nbsp;et&nbsp;le&nbsp;dénominateur&nbsp;donnés.<br>
+RAISES&nbsp;:&nbsp;ZeroDivisionError&nbsp;si&nbsp;den&nbsp;égal&nbsp;0</span></dd></dl>
+
+<dl><dt><a name="Fraction-__mul__"><strong>__mul__</strong></a>(self, other)</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;*&nbsp;operator&nbsp;for&nbsp;fractions<br>
+&nbsp;<br>
+PRE:&nbsp;'other'&nbsp;est&nbsp;une&nbsp;instance&nbsp;de&nbsp;Fraction<br>
+POST:&nbsp;Renvoie&nbsp;une&nbsp;nouvelle&nbsp;fraction&nbsp;représentant&nbsp;la&nbsp;multiplication&nbsp;des&nbsp;deux&nbsp;fractions</span></dd></dl>
+
+<dl><dt><a name="Fraction-__pow__"><strong>__pow__</strong></a>(self, other: int)</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;**&nbsp;operator&nbsp;for&nbsp;fractions.<br>
+&nbsp;<br>
+PRE:&nbsp;'other&nbsp;'&nbsp;est&nbsp;un&nbsp;entier<br>
+POST:&nbsp;Renvoie&nbsp;une&nbsp;nouvelle&nbsp;fraction&nbsp;représentant&nbsp;la&nbsp;puissance&nbsp;de&nbsp;la&nbsp;fraction<br>
+RAISES&nbsp;:&nbsp;TypeError&nbsp;si&nbsp;other&nbsp;n'est&nbsp;pas&nbsp;un&nbsp;nombre&nbsp;entier</span></dd></dl>
+
+<dl><dt><a name="Fraction-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;a&nbsp;textual&nbsp;representation&nbsp;of&nbsp;the&nbsp;reduced&nbsp;form&nbsp;of&nbsp;the&nbsp;fraction<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;un&nbsp;string&nbsp;contenant&nbsp;le&nbsp;numérateur&nbsp;et&nbsp;le&nbsp;dénominateur&nbsp;séparés&nbsp;par&nbsp;un&nbsp;'/'gg</span></dd></dl>
+
+<dl><dt><a name="Fraction-__sub__"><strong>__sub__</strong></a>(self, other)</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;-&nbsp;operator&nbsp;for&nbsp;fractions.<br>
+&nbsp;<br>
+PRE:&nbsp;'other'&nbsp;est&nbsp;une&nbsp;instance&nbsp;de&nbsp;Fraction<br>
+POST:&nbsp;Renvoie&nbsp;une&nbsp;nouvelle&nbsp;fraction&nbsp;représentant&nbsp;la&nbsp;différence&nbsp;des&nbsp;deux&nbsp;fractions</span></dd></dl>
+
+<dl><dt><a name="Fraction-__truediv__"><strong>__truediv__</strong></a>(self, other: int)</dt><dd><span class="code">Overloading&nbsp;of&nbsp;the&nbsp;/&nbsp;operator&nbsp;for&nbsp;fractions.<br>
+&nbsp;<br>
+PRE&nbsp;:&nbsp;'other'&nbsp;est&nbsp;une&nbsp;instance&nbsp;de&nbsp;Fraction&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;une&nbsp;nouvelle&nbsp;fraction&nbsp;représentant&nbsp;la&nbsp;division&nbsp;des&nbsp;deux&nbsp;fractions<br>
+RAISES&nbsp;:&nbsp;ZeroDivisionError&nbsp;si&nbsp;'numerator'&nbsp;est&nbsp;nul</span></dd></dl>
+
+<dl><dt><a name="Fraction-as_mixed_number"><strong>as_mixed_number</strong></a>(self)</dt><dd><span class="code">Return&nbsp;a&nbsp;textual&nbsp;representation&nbsp;of&nbsp;the&nbsp;reduced&nbsp;form&nbsp;of&nbsp;the&nbsp;fraction&nbsp;as&nbsp;a&nbsp;mixed&nbsp;number.<br>
+A&nbsp;mixed&nbsp;number&nbsp;is&nbsp;the&nbsp;sum&nbsp;of&nbsp;an&nbsp;integer&nbsp;and&nbsp;a&nbsp;proper&nbsp;fraction<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;un&nbsp;string&nbsp;avec&nbsp;la&nbsp;valeur&nbsp;int&nbsp;de&nbsp;la&nbsp;fraction&nbsp;et&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;le&nbsp;reste&nbsp;de&nbsp;la&nbsp;fraction&nbsp;séparé&nbsp;par&nbsp;un&nbsp;'+'.</span></dd></dl>
+
+<dl><dt><a name="Fraction-is_adjacent_to"><strong>is_adjacent_to</strong></a>(self, other)</dt><dd><span class="code">Check&nbsp;if&nbsp;two&nbsp;fractions&nbsp;differ&nbsp;by&nbsp;a&nbsp;unit&nbsp;fraction<br>
+Two&nbsp;fractions&nbsp;are&nbsp;adjacents&nbsp;if&nbsp;the&nbsp;absolute&nbsp;value&nbsp;of&nbsp;the&nbsp;difference&nbsp;them&nbsp;is&nbsp;a&nbsp;unit&nbsp;fraction.<br>
+&nbsp;<br>
+PRE&nbsp;:&nbsp;Une&nbsp;fraction.<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;deux&nbsp;fractions&nbsp;sont&nbsp;adjacentes&nbsp;sinon&nbsp;False.</span></dd></dl>
+
+<dl><dt><a name="Fraction-is_integer"><strong>is_integer</strong></a>(self)</dt><dd><span class="code">Check&nbsp;if&nbsp;a&nbsp;fraction&nbsp;is&nbsp;integer&nbsp;(ex&nbsp;:&nbsp;8/4,&nbsp;3,&nbsp;2/2,&nbsp;...).<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;la&nbsp;fraction&nbsp;est&nbsp;un&nbsp;entier,&nbsp;False&nbsp;sinon</span></dd></dl>
+
+<dl><dt><a name="Fraction-is_proper"><strong>is_proper</strong></a>(self)</dt><dd><span class="code">Check&nbsp;if&nbsp;the&nbsp;absolute&nbsp;value&nbsp;of&nbsp;the&nbsp;fraction&nbsp;is&nbsp;&lt;&nbsp;1.<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;la&nbsp;fraction&nbsp;est&nbsp;propre,&nbsp;False&nbsp;sinon</span></dd></dl>
+
+<dl><dt><a name="Fraction-is_unit"><strong>is_unit</strong></a>(self)</dt><dd><span class="code">Check&nbsp;if&nbsp;a&nbsp;fraction's&nbsp;numerator&nbsp;is&nbsp;1&nbsp;in&nbsp;its&nbsp;reduced&nbsp;form.<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;le&nbsp;numérateur&nbsp;est&nbsp;1,&nbsp;False&nbsp;sinon</span></dd></dl>
+
+<dl><dt><a name="Fraction-is_zero"><strong>is_zero</strong></a>(self)</dt><dd><span class="code">Check&nbsp;if&nbsp;a&nbsp;fraction's&nbsp;value&nbsp;is&nbsp;0.<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;True&nbsp;si&nbsp;la&nbsp;fraction&nbsp;est&nbsp;nulle,&nbsp;False&nbsp;sinon&nbsp;T&nbsp;=&nbsp;1&nbsp;F&nbsp;=&nbsp;0</span></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="Fraction-is_fraction"><strong>is_fraction</strong></a>(num: int)</dt><dd><span class="code">A&nbsp;function&nbsp;to&nbsp;set&nbsp;a&nbsp;value&nbsp;to&nbsp;Fraction<br>
+&nbsp;<br>
+PRE&nbsp;:&nbsp;Une&nbsp;valeur&nbsp;numérique.<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;la&nbsp;fraction&nbsp;de&nbsp;la&nbsp;valeur.<br>
+RAISES&nbsp;:&nbsp;ValueError&nbsp;si&nbsp;num&nbsp;n'est&nbsp;pas&nbsp;un&nbsp;int&nbsp;ou&nbsp;une&nbsp;fraction</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>denominator</strong></dt>
+<dd><span class="code">This&nbsp;gets&nbsp;the&nbsp;value&nbsp;of&nbsp;denominator.<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;la&nbsp;valeur&nbsp;du&nbsp;dénominateur.</span></dd>
+</dl>
+<dl><dt><strong>numerator</strong></dt>
+<dd><span class="code">This&nbsp;gets&nbsp;the&nbsp;value&nbsp;of&nbsp;numerator.<br>
+&nbsp;<br>
+POST&nbsp;:&nbsp;Renvoie&nbsp;la&nbsp;valeur&nbsp;du&nbsp;numérateur.</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table>
+</body></html>

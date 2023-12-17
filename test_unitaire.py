@@ -1,6 +1,6 @@
-from main import Fraction
-import unittest
 import coverage
+import unittest
+from main import Fraction
 
 class TestUnitaire(unittest.TestCase):
 
@@ -97,6 +97,7 @@ class TestUnitaire(unittest.TestCase):
 
     def test_adjacent(self):
         """Test if the difference between two Fraction is a unit"""
+        self.assertTrue(Fraction(2, 4).is_adjacent_to(Fraction(0)))
         self.assertFalse(Fraction(4, 3).is_adjacent_to(2))
 
 if __name__ == '__main__':
