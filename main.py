@@ -6,7 +6,7 @@ class Fraction:
     """Class representing a fraction and operations on it
 
     Author : M. Malpica Arana
-    Date : 09/12/2023
+    Date : 12/12/2023
     This class allows fraction manipulations through several operations.
     """
 
@@ -16,9 +16,7 @@ class Fraction:
         PRE :
         - num : un int qui représente le numérateur d'une fraction
         - den : un int qui représente le dénominateur d'une fraction
-        POST :
-        - numerator : le numérateur réduit d'une fraction
-        - denominator : le dénominateur réduit positif d'une fraction
+        POST : Initialise un objet Fraction avec le numérateur et le dénominateur donnés.
         RAISES : ZeroDivisionError si den égal 0
         """
         if den == 0:
@@ -49,7 +47,6 @@ class Fraction:
         POST : Renvoie la valeur du dénominateur.
         """
         return self.__denominator
-
     @staticmethod
     def is_fraction(num: int):
         """A function to set a value to Fraction
@@ -59,7 +56,7 @@ class Fraction:
         RAISES : ValueError si num n'est pas un int ou une fraction
         """
 
-        if isinstance(num, int):
+        if isinstance(num, int):    #type d'un param
             num = Fraction(num)
         if not isinstance(num, Fraction):
             raise ValueError("Doit être un int ou une fraction")
@@ -78,7 +75,8 @@ class Fraction:
         """Return a textual representation of the reduced form of the fraction as a mixed number.
         A mixed number is the sum of an integer and a proper fraction
 
-        POST : Renvoie un string avec la valeur int de la fraction et le reste de la fraction séparé par un '+'.
+        POST : Renvoie un string avec la valeur int de la fraction et 
+            le reste de la fraction séparé par un '+'.
         """
 
         int_value = self.numerator // self.denominator
@@ -110,7 +108,7 @@ class Fraction:
         return Fraction(sub_num, sub_den)
 
     def __mul__(self, other):
-        """Overloading of the * operator for fractions.
+        """Overloading of the * operator for fractions
 
         PRE: 'other' est une instance de Fraction
         POST: Renvoie une nouvelle fraction représentant la multiplication des deux fractions
@@ -123,9 +121,9 @@ class Fraction:
     def __truediv__(self, other :int):
         """Overloading of the / operator for fractions.
 
-        PRE : 'other' est une instance de Fraction et 'other' n'est pas une fraction nulle
+        PRE : 'other' est une instance de Fraction 
         POST : Renvoie une nouvelle fraction représentant la division des deux fractions
-        RAISES : ZeroDivisionError si 'den' est nul
+        RAISES : ZeroDivisionError si 'numerator' est nul
         """
 
         if other.numerator == 0:
@@ -149,7 +147,6 @@ class Fraction:
         pow_num = self.numerator ** other
         pow_den = self.denominator ** other
         return Fraction(pow_num, pow_den)
-    
     def __eq__(self, other:int) -> bool:
         """Overloading of the == operator for fractions.
 
@@ -165,15 +162,14 @@ class Fraction:
         POST: Renvoie la valeur décimale de la fraction
         """
         return self.numerator / self.denominator
-    
-# TODO : [BONUS] You can overload other operators if you wish (ex : <, >, ...)
+#[BONUS] You can overload other operators if you wish (ex : <, >, ...)
 
     # ------------------ Properties checking  ------------------
 
     def is_zero(self):
         """Check if a fraction's value is 0.
 
-        POST : Renvoie True si la fraction est nulle, False sinon
+        POST : Renvoie True si la fraction est nulle, False sinon T = 1 F = 0
         """
         return not self.numerator
 
@@ -198,15 +194,14 @@ class Fraction:
         """
         return self.numerator == 1
 
-    def is_adjacent_to(self, other) :
+    def is_adjacent_to(self, other)  :
         """Check if two fractions differ by a unit fraction
         Two fractions are adjacents if the absolute value of the difference them is a unit fraction.
 
         PRE : Une fraction.
         POST : Renvoie True si deux fractions sont adjacentes sinon False.
         """
-        diff = abs(self.__num * other.__den - other.__num * self.__den)
+        diff = abs(self.numerator * other.denominator - other.numerator * self.denominator)
         return diff == 1
-    
 if __name__=='__main__':
     pydoc.writedoc(Fraction)
