@@ -49,6 +49,7 @@ class TestUnitaire(unittest.TestCase):
     def test_sub(self):
         """Test de l'opération de soustraction sur une fraction"""
         self.assertEqual(str(Fraction(4, 4) - Fraction(3, 4)), "1/4")   
+        self.assertEqual(str(Fraction(3, 4) - Fraction(13, 4)), "-5/2")
 
     def test_mul(self):
         """Test de l'opération de multiplication sur Fraction"""
@@ -68,7 +69,7 @@ class TestUnitaire(unittest.TestCase):
     def test_eq(self):
         """Test == opération sur Fraction"""
         self.assertTrue(Fraction(1, 2) == Fraction(2, 4))
-        self.assertTrue(Fraction(3, 3) == Fraction(3, 3))
+        self.assertFalse(Fraction(1, 2) == Fraction(3, 4))
 
     def test_float(self):
         """Test de conversion d'une fraction en float"""
@@ -93,7 +94,7 @@ class TestUnitaire(unittest.TestCase):
     def test_unit(self):
         """Test si le numérateur de la fraction == 1"""
         self.assertTrue(Fraction(1, 3).is_unit())
-        self.assertFalse(Fraction(2, 9).is_unit())    
+        self.assertFalse(Fraction(2, 9).is_unit())
 
     def test_adjacent(self):
         """Test if the difference between two Fraction is a unit"""
