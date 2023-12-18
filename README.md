@@ -4,5 +4,7 @@ Le fichier python principale du TP09 est disponible [ici](https://github.com/Max
 Vous pouvez aussi constater que j'ai effectué plusieurs commit et donc j'aimerais valider la compétence Projet-4.
 
 Voici une vidéo de démonstration ainsi qu'un screenshot du TP09 [ICI](https://ephec-my.sharepoint.com/:f:/r/personal/he202259_students_ephec_be/Documents/Video%20TP09?csf=1&web=1&e=905K04)
+
+
 Bien a vous, 
 Maxime Malpica.
